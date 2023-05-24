@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  background-color: #adb5bd;
+}
+.container {
+  width: 650px;
+  margin: 30px auto;
+  background-color: #e9ecef;
+  padding: 14px 28px;
+  border-radius: 16px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+h1 {
+  font-size: 32px;
+  font-style: italic;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+}
+h1::after {
+  content: "web";
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-left: 8px;
+  padding: 3px 6px;
+  background-color: orangered;
+  color: white;
+}
+.job-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.job-application {
+  width: 600px;
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 24px;
+  row-gap: 24px;
+}
+.address {
+  grid-column: 1/-1;
+}
+label {
+  font-size: 18px;
+
+  font-weight: bold;
+}
+input,
+select {
+  /* width: 90%; */
+  font-size: 16px;
+}
+textarea {
+  font-size: 14px;
+}
+input,
+select,
+textarea {
+  padding: 5px 10px;
+  border: 1px solid grey;
+  border-radius: 8px;
+}
+input,
+select,
+textarea:focus {
+  outline-color: #ae3ec9;
+}
+button {
+  border: none;
+  font-size: 15px;
+  padding: 6px 12px;
+  background-color: #862e9c;
+  border-radius: 12px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

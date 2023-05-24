@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FORM</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>JOB application</h1>
+      <div class="job-application">
+        <div class="job-form">
+          <label for="name">First Name</label>
+          <input id="name" name="name" placeholder="Enter the First Name" />
+        </div>
+        <div class="job-form">
+          <label for="last_name">Last Name</label>
+          <input
+            id="last_name"
+            name="last_name"
+            placeholder="Enter the Last Name"
+          />
+        </div>
+        <div class="job-form">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Mail"
+          />
+        </div>
+        <div class="job-form">
+          <label for="job_role">Job Role</label>
+          <select id="job_role" name="job_role">
+            <option value="">Select the Job role</option>
+            <option value="Front-end">Front-end development</option>
+            <option value="back-end">back-end development</option>
+            <option value="Fullstack">Fullstack development</option>
+            <option value="UI/UX designer">UI/UX designer</option>
+          </select>
+        </div>
+        <div class="job-form address">
+          <label for="address">ADDRESS</label>
+
+          <textarea
+            name="address"
+            id="address"
+            cols="30"
+            rows="4"
+            placeholder="Enter the address"
+          ></textarea>
+        </div>
+        <div class="job-form">
+          <label for="city">CITY</label>
+          <input id="city" name="city" placeholder="Enter the City" />
+        </div>
+        <div class="job-form">
+          <label for="pincode">PINCODE</label>
+          <input id="pincode" name="pincode" placeholder="Enter the pincode" />
+        </div>
+        <div class="job-form">
+          <label for="date">DATE</label>
+          <input type="date" id="date" name="date" />
+        </div>
+        <div class="job-form">
+          <label for="upload">Upload your CV</label>
+          <input type="file" id="upload" name="upload" />
+        </div>
+      </div>
+      <div class="btn"><button type="submit">Apply Now</button></div>
+    </div>
+  </body>
+</html>
